@@ -4,8 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    <h1>Welcome to homepage</h1>
+    
+    <main class="flex justify-center">
+        <div class="mockup-phone">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display bg-gray-300 text-black grid place-content-center">
+                <h1 class="text-center font-bold text-2xl mt-10 mb-7">Welcome to payoo!</h1>
+                <!-- Money details -->
+                <div class="stat bg-stone-200 rounded-lg">
+                    <div class="stat-title text-base">Current balance</div>
+                    <div class="stat-value">$89400</div>
+                    <div class="stat-actions">
+                      <button class="btn btn-xs">Add Money</button>
+                      <button class="btn btn-xs">Cash Out</button>
+                    </div>
+                  </div>
+                  <div class="divider"></div>
+                  <!-- Add money form start -->
+                  <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <fieldset class="fieldset">
+                            <label class="label font-bold">Amount</label>
+                            <input id="amount" type="text" class="input" placeholder="Enter your number" autocomplete="off" />
+
+                            <label class="label font-bold">4 Digit Pin</label>
+                            <input id="pin-number" type="password" class="input" placeholder="Enter 4 Digit Pin" autocomplete="off" />
+                            
+                            <button id="log-in" class="btn btn-neutral mt-4 rounded-3xl bg-green-500 border-none">Add Money</button>
+                          </fieldset>
+                    </div>
+                  </div>
+                   <!-- Add money form end -->
+            </div>
+          </div>
+          
+           
+    </main>
+    <script src="./js/home.js"></script>
 </body>
 </html>
