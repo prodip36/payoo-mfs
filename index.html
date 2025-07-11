@@ -20,10 +20,12 @@
                         <div class="card-body">
                           <fieldset class="fieldset">
                             <label class="label font-bold">Mobile Number</label>
-                            <input type="text" class="input" placeholder="Enter your number" />
+                            <input id="phone-number" type="text" class="input" placeholder="Enter your number" autocomplete="off" />
+
                             <label class="label font-bold">4 Digit Pin</label>
-                            <input type="password" class="input" placeholder="Enter 4 Digit Pin" />
-                            <button class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none">Login</button>
+                            <input id="pin-number" type="password" class="input" placeholder="Enter 4 Digit Pin" autocomplete="off" />
+                            
+                            <button id="log-in" class="btn btn-neutral mt-4 rounded-3xl bg-[#0874F2] border-none">Login</button>
                           </fieldset>
                         </div>
                       </div>
@@ -32,6 +34,6 @@
             </div>
           </div>
     </main>
-    
+    <script src="./js/log-in.js"></script>
 </body>
 </html>
